@@ -115,3 +115,36 @@ The `delete()` function removes the element at the front of the queue. If the qu
 The `display()` function prints all elements in the queue from `front` to `rear`. If the queue is empty, it prints a message indicating that the queue is empty.
 
 ---
+
+# Stack Operations Using Linked List in C
+
+## Description
+This C program demonstrates the implementation of **stack operations** using a **linked list**. The stack follows the **LIFO (Last In, First Out)** principle, where the last inserted element is the first to be removed. The program supports the following operations:
+- **Push**: Inserts an element onto the stack.
+- **Pop**: Removes the topmost element from the stack.
+- **Display**: Displays all elements of the stack.
+
+This implementation dynamically manages memory using linked lists, making it more flexible compared to arrays, especially when the stack size is not predetermined.
+
+---
+
+## Features
+1. **Push operation**: Adds an element to the top of the stack.
+2. **Pop operation**: Removes the top element from the stack.
+3. **Display operation**: Shows all elements in the stack from top to bottom.
+4. **Underflow Handling**: Prevents popping from an empty stack and displays an appropriate message.
+
+---
+
+## Code Overview
+
+### **1. push()**
+The `push()` function creates a new node, assigns a value to it, and inserts it at the top of the stack. If the stack is empty (`head == NULL`), the new node becomes the first element.
+
+### **2. pop()**
+The `pop()` function removes the top element of the stack. If the stack is empty, it prints an **underflow** message. The memory of the removed node is freed to prevent memory leaks.
+
+### **3. display()**
+The `display()` function traverses the linked list and prints all elements of the stack starting from the top.
+
+---
