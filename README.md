@@ -152,86 +152,75 @@ The `display()` function traverses the linked list and prints all elements of th
 # Singly Linked List Operations in C
 
 ## Description
-This program demonstrates the implementation of basic operations on a **singly linked list** in C. A singly linked list is a dynamic data structure where each node contains:
-1. A `data` field to store the value.
-2. A `next` pointer that points to the next node in the sequence.
-
-The program includes the following operations:
-- **Insert at the Beginning**
-- **Insert at the End**
-- **Delete by Value**
-- **Display the List**
+This program demonstrates various operations on a singly linked list, including:
+1. **Insertion**:
+   - At the beginning.
+   - At the end.
+   - At a specific position.
+2. **Deletion**:
+   - From the beginning.
+   - From the end.
+   - At a specific position.
+3. **Search**: Find the position of a given element in the list.
+4. **Update**: Modify the value of a node at a specific position.
+5. **Display**: Traverse the list and print all elements.
 
 ---
 
 ## Features
-1. **Insert at Beginning**: Adds an element to the start of the list.
-2. **Insert at End**: Appends an element to the end of the list.
-3. **Delete by Value**: Removes a node containing a specified value.
-4. **Display**: Prints all elements in the list.
+### Insertion
+- **At the Beginning**: Adds a new node to the start of the list.
+- **At the End**: Adds a new node to the end of the list.
+- **At a Specific Position**: Adds a new node at a given position in the list.
+
+### Deletion
+- **From the Beginning**: Removes the first node from the list.
+- **From the End**: Removes the last node from the list.
+- **At a Specific Position**: Removes the node at a given position.
+
+### Search
+- Finds an element in the list and returns its position.
+
+### Update
+- Updates the value of a node at a specific position.
+
+### Display
+- Traverses the list and prints all elements.
 
 ---
 
 ## Code Overview
 
-### **1. insertatbeg()**
-This function inserts a new node at the beginning of the linked list.  
-- If the list is empty, the new node becomes the `head`.
-- If the list has elements, the new node's `next` pointer is set to the current `head`.
+### **Functions**
+1. **createNode(data)**:
+   - Allocates memory for a new node and initializes its value.
 
-### **2. insertatlast()**
-This function inserts a new node at the end of the linked list.  
-- If the list is empty, the new node becomes the `head`.
-- Otherwise, it traverses to the last node and updates its `next` pointer to point to the new node.
+2. **insertAtBeginning(head, data)**:
+   - Inserts a new node at the beginning of the list.
 
-### **3. delbyval()**
-This function deletes the first node containing the specified value.  
-- If the list is empty, it prints an "empty list" message.
-- It handles cases where the node to be deleted is the only node, the `head`, or any other node.
+3. **insertAtEnd(head, data)**:
+   - Inserts a new node at the end of the list.
 
-### **4. display()**
-This function traverses the linked list from the `head` and prints the `data` in each node.  
-- If the list is empty, it prints an appropriate message.
+4. **insertAtPosition(head, data, position)**:
+   - Inserts a new node at a specific position in the list.
 
----
+5. **deleteFromBeginning(head)**:
+   - Removes the first node in the list.
 
-# Linked List Traversal and Insertion at Beginning in C
+6. **deleteFromEnd(head)**:
+   - Removes the last node in the list.
 
-## Description
-This program implements two fundamental operations on a singly linked list:
-1. **Traversal**: Print all the elements in the linked list.
-2. **Insertion at the Beginning**: Add a new node at the start of the list.
+7. **deleteAtPosition(head, position)**:
+   - Removes a node from a specific position in the list.
 
-The program dynamically allocates memory for nodes and allows the user to:
-- Create a linked list interactively.
-- Insert a new node at the beginning.
-- Traverse and display the linked list.
+8. **searchElement(head, key)**:
+   - Searches for an element in the list and returns its position.
 
----
+9. **updateElement(head, position, newData)**:
+   - Updates the value of a node at a specific position.
 
-## Features
-1. **Traversal**: Traverses the linked list from the `head` and prints the data of each node.
-2. **Insert at Beginning**: Adds a new node to the start of the list, making it the new `head`.
-
----
-
-## Code Overview
-
-### **1. traverse()**
-This function traverses the linked list starting from the `head` and prints the `data` of each node.  
-- Uses a temporary pointer to iterate through the list.
-- Ends when the pointer reaches `NULL`.
-
-### **2. insertatbeginning()**
-This function inserts a new node at the start of the linked list.  
-- Dynamically allocates memory for the new node.
-- Updates the new node's `next` pointer to point to the current `head`.
-- Updates the `head` to point to the new node.
-
-### **3. main()**
-- Allows the user to build the linked list interactively by entering values.
-- Calls the `insertatbeginning()` function to add a node at the start.
-- Calls the `traverse()` function to print the list.
+10. **displayList(head)**:
+    - Prints all the elements in the list.
 
 ---
 
