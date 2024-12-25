@@ -148,3 +148,49 @@ The `pop()` function removes the top element of the stack. If the stack is empty
 The `display()` function traverses the linked list and prints all elements of the stack starting from the top.
 
 ---
+
+# Singly Linked List Operations in C
+
+## Description
+This program demonstrates the implementation of basic operations on a **singly linked list** in C. A singly linked list is a dynamic data structure where each node contains:
+1. A `data` field to store the value.
+2. A `next` pointer that points to the next node in the sequence.
+
+The program includes the following operations:
+- **Insert at the Beginning**
+- **Insert at the End**
+- **Delete by Value**
+- **Display the List**
+
+---
+
+## Features
+1. **Insert at Beginning**: Adds an element to the start of the list.
+2. **Insert at End**: Appends an element to the end of the list.
+3. **Delete by Value**: Removes a node containing a specified value.
+4. **Display**: Prints all elements in the list.
+
+---
+
+## Code Overview
+
+### **1. insertatbeg()**
+This function inserts a new node at the beginning of the linked list.  
+- If the list is empty, the new node becomes the `head`.
+- If the list has elements, the new node's `next` pointer is set to the current `head`.
+
+### **2. insertatlast()**
+This function inserts a new node at the end of the linked list.  
+- If the list is empty, the new node becomes the `head`.
+- Otherwise, it traverses to the last node and updates its `next` pointer to point to the new node.
+
+### **3. delbyval()**
+This function deletes the first node containing the specified value.  
+- If the list is empty, it prints an "empty list" message.
+- It handles cases where the node to be deleted is the only node, the `head`, or any other node.
+
+### **4. display()**
+This function traverses the linked list from the `head` and prints the `data` in each node.  
+- If the list is empty, it prints an appropriate message.
+
+---
