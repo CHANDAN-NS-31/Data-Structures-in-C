@@ -82,3 +82,36 @@ The `display()` function prints all elements of the queue:
 - Otherwise, it prints all the elements in the queue from `front` to `rear`.
 
 ---
+
+# Queue Operation Using Linked List in C
+
+## Description
+This C program demonstrates a queue implementation using a **linked list**. Unlike the array implementation, the linked list allows dynamic memory allocation, making it more flexible with the size of the queue. The program supports the following queue operations:
+- **Insert**: Adds an element at the rear of the queue.
+- **Delete**: Removes an element from the front of the queue.
+- **Display**: Displays all elements in the queue.
+
+This implementation uses a singly linked list where each node contains a `val` (the value stored) and a pointer (`next`) to the next node in the queue.
+
+---
+
+## Features
+- **Insert operation**: Adds a new element at the rear of the queue.
+- **Delete operation**: Removes the front element from the queue.
+- **Display operation**: Displays the current elements in the queue.
+- **Queue Underflow Handling**: Checks for underflow condition when attempting to delete from an empty queue.
+
+---
+
+## Code Overview
+
+### **1. insert()**
+The `insert()` function adds a new element at the rear of the queue. If the queue is empty (i.e., `front == NULL`), both the `front` and `rear` pointers are set to the new node. Otherwise, the new node is added at the rear and the `rear` pointer is updated.
+
+### **2. delete()**
+The `delete()` function removes the element at the front of the queue. If the queue is empty, it prints an **underflow** message. The `front` pointer is updated to point to the next node, and the previous front node is freed.
+
+### **3. display()**
+The `display()` function prints all elements in the queue from `front` to `rear`. If the queue is empty, it prints a message indicating that the queue is empty.
+
+---
