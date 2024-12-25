@@ -49,3 +49,36 @@ Infix expressions are commonly used in arithmetic operations, while postfix (Rev
 
 ---
 
+# Array Implementation of Queue in C
+
+## Description
+This C program demonstrates the array-based implementation of a queue. A queue is a linear data structure that follows the **FIFO (First In First Out)** principle, meaning the element inserted first is the one removed first. The program provides the basic operations of a queue: inserting an element, deleting an element, and displaying all elements of the queue.
+
+---
+
+## Features
+- **Insert operation**: Adds an element to the queue.
+- **Delete operation**: Removes an element from the queue.
+- **Display operation**: Displays all elements of the queue.
+- **Queue Overflow and Underflow Handling**: Checks for conditions like attempting to insert into a full queue or delete from an empty queue.
+
+---
+
+## Code Overview
+
+### **1. insert()**
+The `insert()` function adds an element to the queue:
+- If the queue is full (i.e., `rear == MAX - 1`), it prints a **Queue Overflow** message.
+- Otherwise, it adds the element at the rear of the queue.
+
+### **2. del()**
+The `del()` function removes an element from the queue:
+- If the queue is empty (i.e., `front == -1` or `front > rear`), it prints a **Queue Underflow** message.
+- Otherwise, it removes the element from the front of the queue and increments the `front` pointer.
+
+### **3. display()**
+The `display()` function prints all elements of the queue:
+- If the queue is empty (i.e., `front == -1`), it prints a **Queue is empty** message.
+- Otherwise, it prints all the elements in the queue from `front` to `rear`.
+
+---
