@@ -194,3 +194,44 @@ This function traverses the linked list from the `head` and prints the `data` in
 - If the list is empty, it prints an appropriate message.
 
 ---
+
+# Linked List Traversal and Insertion at Beginning in C
+
+## Description
+This program implements two fundamental operations on a singly linked list:
+1. **Traversal**: Print all the elements in the linked list.
+2. **Insertion at the Beginning**: Add a new node at the start of the list.
+
+The program dynamically allocates memory for nodes and allows the user to:
+- Create a linked list interactively.
+- Insert a new node at the beginning.
+- Traverse and display the linked list.
+
+---
+
+## Features
+1. **Traversal**: Traverses the linked list from the `head` and prints the data of each node.
+2. **Insert at Beginning**: Adds a new node to the start of the list, making it the new `head`.
+
+---
+
+## Code Overview
+
+### **1. traverse()**
+This function traverses the linked list starting from the `head` and prints the `data` of each node.  
+- Uses a temporary pointer to iterate through the list.
+- Ends when the pointer reaches `NULL`.
+
+### **2. insertatbeginning()**
+This function inserts a new node at the start of the linked list.  
+- Dynamically allocates memory for the new node.
+- Updates the new node's `next` pointer to point to the current `head`.
+- Updates the `head` to point to the new node.
+
+### **3. main()**
+- Allows the user to build the linked list interactively by entering values.
+- Calls the `insertatbeginning()` function to add a node at the start.
+- Calls the `traverse()` function to print the list.
+
+---
+
