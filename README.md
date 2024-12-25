@@ -31,3 +31,21 @@ A recursive utility function that tries to find a valid path. It:
 - Backtracks if no valid move is found.
 
 ---
+
+# Infix to Postfix Conversion Using Stack in C
+
+## Description
+This C program converts an infix expression (like `a+b*(c^d-e)^(f+g*h)-i`) into its corresponding postfix expression (like `ab+cd^e-*fg*h+^i-`). The program uses a stack to handle operators and parentheses efficiently.
+
+Infix expressions are commonly used in arithmetic operations, while postfix (Reverse Polish Notation) expressions do not require parentheses or operator precedence rules. This program implements a stack-based approach to handle the conversion.
+
+---
+
+## Features
+- **Stack Implementation**: Uses an array-based stack to manage operators and operands.
+- **Operator Precedence**: Handles precedence for operators `+`, `-`, `*`, `/`, and `^`.
+- **Parentheses Handling**: Supports parentheses to group sub-expressions.
+- **Expression Conversion**: Converts a valid infix expression to a postfix expression using a stack.
+
+---
+
