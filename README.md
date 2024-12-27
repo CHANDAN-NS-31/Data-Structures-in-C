@@ -224,3 +224,32 @@ This program demonstrates various operations on a singly linked list, including:
 
 ---
 
+
+# Circular Linked List Operations in C
+
+## Overview
+This program implements a **Circular Linked List** in C, offering a range of functionalities like insertion, deletion, searching, updating, and displaying the list. A Circular Linked List is a linear data structure where the last node points back to the first node, forming a circle.
+
+---
+
+## Features
+1. **Insertion**:
+   - Insert at the beginning of the list.
+   - Insert at the end of the list.
+
+2. **Deletion**:
+   - Delete a node with a given value.
+
+3. **Searching**:
+   - Search for a specific value in the list.
+
+4. **Updating**:
+   - Update the value of an existing node.
+
+5. **Display**:
+   - Display all nodes in the list.
+
+6. **Memory Management**:
+   - Free all allocated memory to prevent memory leaks.
+
+---
