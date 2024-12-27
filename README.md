@@ -253,3 +253,31 @@ This program implements a **Circular Linked List** in C, offering a range of fun
    - Free all allocated memory to prevent memory leaks.
 
 ---
+
+
+# Binary Search Tree (BST) Insertion in C
+
+## Overview
+This program implements the insertion operation in a **Binary Search Tree (BST)** using C. A BST is a binary tree data structure where each node has at most two children, and for every node:
+- The left child's value is less than the parent node's value.
+- The right child's value is greater than the parent node's value.
+
+The program also demonstrates node creation and linking in a manually constructed BST.
+
+---
+
+## Features
+1. **Node Creation**:
+   - Dynamically create nodes for the BST.
+
+2. **Insertion**:
+   - Insert a new value into the BST while maintaining its properties.
+   - Avoid duplicate values.
+
+3. **Manual Tree Construction**:
+   - Demonstrates manual linkage of tree nodes.
+
+4. **Dynamic Memory Allocation**:
+   - Uses `malloc` for efficient memory management.
+
+---
